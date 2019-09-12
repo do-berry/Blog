@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Header from './header.js'
+import Header from './header.js';
+import Post from './post.js';
 
 class Blog extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props);
+    this.post = Post
   }
+
   render() {
     return (
-      <Header></Header>
+      <body>
+        <Header key='header' />
+        <Post key='post' />
+      </body>
     );
   }
 }
 
-ReactDOM.render(<Blog/>, document.getElementById('root'))
+ReactDOM.render(<Blog />, document.getElementById('root'))
 export default Blog;

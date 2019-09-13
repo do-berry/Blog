@@ -12,7 +12,9 @@ a:hover {
 }
 
 .page-header {
-    background-color: #7b9897;
+    background-image: url('./Images/header.png');
+    background-position: center;
+    background-size: 100%;
     margin: 0px 0px 60px;
     padding: 20px 20px 20px 50px;
     box-shadow: -5px 10px 90px #987B7C;
@@ -27,6 +29,7 @@ ul {
     padding: 0;
     overflow: auto;
     background-color: #7a5759;
+    border: 1px solid #a6a6a6;
 }
 
 li {
@@ -44,5 +47,5 @@ li a {
 }
 
 li a:hover {
-    background-color: rgb(109, 109, 109);
+    background-color: #a6a6a6;
 }

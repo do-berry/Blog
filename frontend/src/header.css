@@ -1,0 +1,51 @@
+h1 a {
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-size: 46px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 15px;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+.page-header {
+    background-image: url('./Images/header.png');
+    background-position: center;
+    background-size: 100%;
+    margin: 0px 0px 60px;
+    padding: 20px 20px 20px 50px;
+    box-shadow: -5px 10px 90px #987B7C;
+}
+
+
+/* menu bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #7a5759;
+    border: 1px solid #a6a6a6;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-family: 'Raleway';
+    box-shadow: 10px 10px #7a5759;
+}
+
+li a:hover {
+    background-color: #a6a6a6;
+}

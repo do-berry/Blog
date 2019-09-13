@@ -1,0 +1,47 @@
+#Post {
+  margin: 10% auto;
+  background-color: #919d96;
+  width: 80%;
+  box-shadow: -5px 10px 90px #FFFFFF;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+thead {
+  background-color: #7a5759;
+}
+
+#PostHeader {
+  border-bottom: 1px solid #ffffff;
+}
+
+h3 {
+  color: #FFFFFF;
+  text-align: right;
+  font-family: 'Raleway';
+  margin: 15px 15px 15px;
+}
+
+h1 {
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 40px;
+  font-family: 'Raleway';
+  margin: 15px 15px 15px;
+}
+
+#PostText {
+  width: 80%;
+  font-size: 22px;
+  text-align: justify;
+  font-family: 'Raleway';
+  color: #ffffff;
+  margin: 35px 35px 35px;
+}
+
+a {
+  text-decoration: none;
+}

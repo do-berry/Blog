@@ -2,17 +2,13 @@ import React, { Component } from 'react';
 require('./post.css');
 
 function ShowDetails(props) {
-  const published_date = props.published_date;
-  const created_date = props.created_date;
-  const author = props.author;
-
-  if (published_date) {
+  if (props.published) {
     return(
-      <h3>Author: {author}, created: {created_date}, published: {published_date}</h3>
+      <h3>Author: {props.author}, created: {props.created}, published: {props.published}</h3>
     );
   }
   return(
-    <h3>Author: {author}, created: {created_date}</h3>
+    <h3>Author: {props.author}, created: {props.created}</h3>
   );
 }
 
@@ -23,9 +19,9 @@ class Post extends Component {
           author: 'Dominika',
           title: 'Taki piekny tytul ze szog',
           text: 'Jakis tam se tekst jest elo',
-          created_date: '23.04.2019',
-          published_date: '23.04.2019',
-        }
+          created: '23.04.2019',
+          published: '23.04.2019',
+        };
     };
 
     render() {
@@ -39,8 +35,8 @@ class Post extends Component {
                         </div>
                         <div id='PostAuthorDate'>
                             <ShowDetails author={ this.state.author}
-                              created={this.state.created_date}
-                              published={this.state.published_date}
+                              created={this.state.created}
+                              published={this.state.published}
                             />
                           </div>
                         </th>

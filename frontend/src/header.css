@@ -15,9 +15,9 @@ a:hover {
     background-image: url('./Images/header.png');
     background-position: center;
     background-size: 100%;
-    margin: 0px 0px 60px;
-    padding: 20px 20px 20px 50px;
-    box-shadow: -5px 10px 90px #987B7C;
+    margin: 0px 0px 0px;
+    padding: 20px 50px 50px 50px;
+    box-shadow: -5px 10px 50px #987B7C;
 }
 
 

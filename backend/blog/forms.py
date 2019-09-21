@@ -7,7 +7,7 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         # klucze z dict() tego co dodajemy
-        fields = ('title', 'text',) # data ma być ustawiona automatycznie
+        fields = ('id', 'title', 'text',) # data ma być ustawiona automatycznie
 
 class CommentForm(forms.ModelForm):
 

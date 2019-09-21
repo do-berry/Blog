@@ -5,6 +5,7 @@ h1 a {
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 15px;
+    text-shadow: 2px 0px #575757;
 }
 
 a:hover {
@@ -12,12 +13,12 @@ a:hover {
 }
 
 .page-header {
-    background-image: url('./Images/header.png');
+    background-image: url('../Images/Mountain.jpg');
     background-position: center;
     background-size: 100%;
     margin: 0px 0px 0px;
     padding: 20px 50px 50px 50px;
-    box-shadow: -5px 10px 50px #987B7C;
+    box-shadow: -5px 10px 50px #a2a2a2;
 }
 
 
@@ -28,8 +29,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-color: #7a5759;
-    border: 1px solid #a6a6a6;
+    background-color: #575757;
+    border: 1px solid #b8b8b8;
 }
 
 li {
@@ -43,7 +44,7 @@ li a {
     padding: 14px 30px;
     text-decoration: none;
     font-family: 'Raleway';
-    box-shadow: 10px 10px #7a5759;
+    box-shadow: 10px 10px #575757;
 }
 
 li a:hover {

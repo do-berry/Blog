@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Post from '../post.js';
-
-const listData = [];
+import Post from '../components/Post.js';
 
 class PostList extends Component {
     state = {
@@ -22,7 +20,11 @@ class PostList extends Component {
 
     render() {
         return(
-            <Post data={this.state.posts}/>
+            <div>
+                {this.state.posts.map((post, id) => {
+                    return <Post props={post}/>
+                })}
+            </div>
         );
     }
 }

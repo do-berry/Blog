@@ -1,36 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './header.js';
-<<<<<<< Updated upstream
-import Post from './components/post.js';
-import 'antd/dist/antd.css';
-import PostList from './containers/PostList';
-=======
-import Post from './post.js';
-import BaseRouter from './routes.js';
->>>>>>> Stashed changes
-
-class Blog extends Component {
-  constructor(props) {
-    super(props);
-    this.post = Post
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Router>
-        <body>
-          <Header key='header' />
-          <BaseRouter />
-        </body>
-        </Router>
-      </div>
-    );
-  }
-}
+import Blog from './Blog';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Blog />, document.getElementById('root'));
-export default Blog;
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

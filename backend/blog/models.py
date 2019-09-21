@@ -3,14 +3,12 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    # odnośnik do innego modelu
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    # tak definiujemy tekst z ograniczoną liczbą znaków
     title = models.CharField(max_length=200)
-    text = models.TextField()  # do dłuższych tekstów bez ograniczeń w ilości znaków
-    created_date = models.DateTimeField(  # data i godzina
+    text = models.TextField()
+    created_date = models.DateTimeField(
         default=timezone.now)
-    published_date = models.DateTimeField(  # data i godzina
+    published_date = models.DateTimeField(
         blank=True, null=True)
 
     def publish(self):
@@ -20,8 +18,8 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    def approved_comments(self):
-        return self.comments.filter(approved_comment=True)
+    # def approved_comments(self):
+    #     return self.comments.filter(approved_comment=True)
 
 
 class Comment(models.Model):

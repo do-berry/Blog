@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import './header.css';
-import MenuList from './menu.js';
+import '../static/Header.css';
+import MenuList from './Menu.js';
 
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.title = 'Hello, World!';
-    this.menu = ['Posts', 'About'];
+    this.menu = ['About'];
   }
 
   render() {

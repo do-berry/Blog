@@ -12,7 +12,7 @@ a:hover {
 }
 
 .page-header {
-    background-image: url('./Images/header.png');
+    background-image: url('../Images/Header.png');
     background-position: center;
     background-size: 100%;
     margin: 0px 0px 0px;

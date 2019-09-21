@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import './header.css';
-import MenuList from './menu.js';
+import '../static/Header.css';
+import MenuList from './Menu.js';
 
 
 class Header extends Component {

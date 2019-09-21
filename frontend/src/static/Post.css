@@ -1,12 +1,11 @@
 #Post {
-  margin: 10% auto;
+  margin: 8% auto;
   background-color: #919d96;
   width: 80%;
-  box-shadow: -5px 10px 90px #FFFFFF;
+  border: 3px solid #000000;
 }
 
 table {
-  table-layout: fixed;
   width: 100%;
 }
 
@@ -15,7 +14,7 @@ thead {
 }
 
 #PostHeader {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 3px solid #000000;
 }
 
 h3 {
@@ -34,7 +33,6 @@ h1 {
 }
 
 #PostText {
-  width: 80%;
   font-size: 22px;
   text-align: justify;
   font-family: 'Raleway';

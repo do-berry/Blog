@@ -1,31 +1,29 @@
-#Post {
-  margin: 8% auto;
-  background-color: #919d96;
-  width: 80%;
-  border: 3px solid #000000;
-}
-
 table {
-  width: 100%;
+  width: 80%;
+  border-collapse: separate;
+  border-spacing:0 0px;
+  opacity: 0.8;
 }
 
-thead {
-  background-color: #7a5759;
+.Post {
+  margin: 8% auto;
+  border: 3px solid #000000;
+  background-color: #dddddd;
 }
 
-#PostHeader {
+.Post .PostHeader {
   border-bottom: 3px solid #000000;
+  background-color: #575757;
 }
 
-h3 {
+#PostDetails {
   color: #FFFFFF;
   text-align: right;
   font-family: 'Raleway';
   margin: 15px 15px 15px;
 }
 
-h1 {
-  color: #FFFFFF;
+#PostTitle {
   text-align: left;
   font-size: 40px;
   font-family: 'Raleway';
@@ -36,10 +34,12 @@ h1 {
   font-size: 22px;
   text-align: justify;
   font-family: 'Raleway';
-  color: #ffffff;
+  color: #000000;
   margin: 35px 35px 35px;
+  opacity: 1;
 }
 
 a {
+  color: #FFFFFF;
   text-decoration: none;
 }

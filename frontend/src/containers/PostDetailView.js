@@ -10,7 +10,7 @@ class PostDetail extends Component {
     }
 
     componentDidMount() {
-        const postID = this.props.match.params.id;
+        const postID = this.props.match.params.postID; // we grab the ID from the URL
         axios.get('http://127.0.0.1:8000/api/post/' + postID)
             .then(res => {
                 this.setState({
@@ -22,9 +22,7 @@ class PostDetail extends Component {
 
     render() {
         return(
-            <Card title={this.state.post.title}>
-                <p>{ this.state.post.text }</p>
-            </Card>
+            <Post props={this.state.post}/>
         );
     }
 }

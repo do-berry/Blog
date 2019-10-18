@@ -7,7 +7,7 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.title = 'Hello, World!';
-    this.menu = ['Posts', 'About'];
+    this.menu = ['About'];
   }
 
   render() {

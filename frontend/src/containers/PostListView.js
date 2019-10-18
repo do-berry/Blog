@@ -20,7 +20,11 @@ class PostList extends Component {
 
     render() {
         return(
-            <Post data={this.state.posts}/>
+            <div>
+                {this.state.posts.map((post, id) => {
+                    return <Post props={post}/>
+                })}
+            </div>
         );
     }
 }

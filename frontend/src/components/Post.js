@@ -1,37 +1,25 @@
-import React, { Component } from 'react';
-import { List } from "antd";
+import React from 'react';
 import '../static/Post.css';
 
-const Post = props => {
+const Post = ({ props }) => {
   return (
-    <List
-      dataSource={props.data}
-      renderItem={item => (
-        <div key={item.id}
-          id='Post'>
-          <table>
-            <thead>
-              <th id='PostHeader'>
-                <a href={'/posts/' + item.id}>
-                  <h1>{item.title}</h1>
-                </a>
-                <h3>Author: {item.author},
-                    created: {item.created_date},
-                    published: {item.published_date}
-                </h3>
-              </th>
-            </thead>
-            <tbody>
-              <tr>
-                <div id='PostText'>
-                  <p>{item.text}</p>
-                </div>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      )}
-    />
+    <table key={props.id} class='Post'>
+      <tr>
+        <th class='PostHeader'>
+          <h2 id='PostTitle'><a href={'/post/' + props.id}>{props.title}</a></h2>
+          <h3 id='PostDetails'>
+            author: {props.author} /
+            created:{props.created_date} /
+            published: {props.published_date}
+          </h3>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p id='PostText'>{props.text}</p>
+        </td>
+      </tr>
+    </table>
   );
 }
 
